@@ -1,0 +1,91 @@
+.header {
+  background: white;
+  border-bottom: 1px solid #dce2eb;
+}
+
+.navbar, .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  padding: 4px 0;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #2459ba;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 24px;
+  border: 1px solid #dce2eb;
+  border-radius: 8px;
+  background: white;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.card h2 {
+  font-size: 19px;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.total {
+  color: #2459ba;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.email {
+  color: #526179;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin-bottom: 16px;
+  background: #edf0f5;
+}
+
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar, .container {
+    padding: 16px;
+  }
+}
